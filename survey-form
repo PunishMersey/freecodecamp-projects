@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Test survey form</h1>
+    <p id="description">This is a test survey form, you need to fill it out and share your feedback.</p>
+      </header>
+      <main>
+    <form id="survey-form">
+      <label id="name-label">Full name:</label>
+        <input
+        id="name"
+        type="text"
+        required
+        placeholder="Enter your name"/>
+        
+        <label id="email-label">Email address:</label>
+          <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your email"/>
+          <label id="number-label">Age:</label>
+          <input
+          id="number"
+          type="number"
+          min="1"
+          max="100"
+          placeholder="Age"/>
+
+        <label for="dropdown">Test question: what is your favorite animal?</label>
+          <select id="dropdown">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="Elephant">Elephant</option>
+            <option selected value="the other">The other</option>
+            </select>
+
+            <legend>This is a test question: What color are your eyes?</legend>
+            <input type="radio" name="color eyes" value="red" id="red color">
+            <label id="Red color">Red eyes</label>
+            <input type="radio" name="color eyes" value="blue" id="Blue color">
+            <label id="Blue color">Blue eyes</label>
+            <input type="radio" name="color eyes" value="green" id="green color">
+            <label id="green color">Green eyes</label>
+            <input type="radio" name="color eyes" value="brown" id="brown color">
+            <label id="brown color">Brown eyes</label>
+            <input type="radio" name="color eyes" value="other" id="other color">
+            <label id="other color">Other color</label>
+
+            <legend>This is a test question: Choose the option that best describes your personality.</legend>
+            <input type="checkbox" value="honesty">
+            <label for="honesty">Honesty</label>
+            <input type="checkbox" value="reliability">
+            <label for="reliability">Reliability</label>
+            <input type="checkbox" value="responsibility">
+            <label for="responsibility">Responsibility</label>
+            <input type="checkbox" value="organization">
+            <label for="organization">Organization</label>
+            <input type="checkbox" value="determination">
+            <label for="determination">Determination</label>
+            <input type="checkbox" value="stress resistance">
+            <label for="stress resistance">Stress resistance</label>
+            <input type="checkbox" value="irresponsibility">
+            <label for="irresponsibility">Irresponsibility</label>
+            <input type="checkbox" value="pride">
+            <label for="pride">Pride</label>
+            
+            <label for="comments">Leave a comment if you have any questions about this test task.</label>
+            <textarea></textarea>
+            <button id="submit" type="submit">
+              Send
+              </button>
+              </main>
+          </form>
