@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+</head>
+<body>
+  <h1>Checkout</h1>
+
+  <section>
+    <h2>Your Cart</h2>
+    <img
+      src="https://kazka.de/cdn/shop/files/vid-mak-miech-priznachiennia-knigha-2_375x.progressive.jpg?v=1767613134"
+      alt="The Witcher book, part one: Sword of Destiny. The cover shows the Witcher with a sword facing a griffin."
+    >
+  </section>
+
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <label for="card-name">
+        Name on Card <span aria-hidden="true">*</span>
+      </label>
+      <input
+        id="card-name"
+        name="card-name"
+        type="text"
+        required
+      >
+
+      <label for="card-number">
+        Card Number <span aria-hidden="true">*</span>
+      </label>
+      <input
+        id="card-number"
+        name="card-number"
+        type="text"
+        required
+        aria-describedby="card-number-help"
+      >
+      <p id="card-number-help">
+        Enter the 16-digit number shown on your card.
+      </p>
+    </form>
+  </section>
+</body>
+</html>
